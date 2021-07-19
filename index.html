@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дом Маркет</title>
+    <link rel="shortcut icon" href="img/Fav-Icon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="header__logo">
+          <img src="img/logo.png" alt="Логотип" />
+        </a>
+        <div class="header__burger">
+          <div></div>
+        </div>
+        <ul class="header__list">
+          <li class="item">
+            <a href="catalog.html">Аренда</a>
+          </li>
+          <li class="item">
+            <a href="catalog.html">Продажа</a>
+          </li>
+          <li class="item">
+            <a href="catalog.html">Для бизнеса</a>
+          </li>
+        </ul>
+        <button class="header__btn popup-link btn">
+          <div>
+            <img src="img/phone.svg" alt="Иконка" />
+          </div>
+          <p>Связаться</p>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div id="popup" class="popup">
+          <div class="popup__body">
+            <div class="popup__content">
+              <a class="popup__close close-popup">
+                <p></p>
+                <p></p>
+              </a>
+              <h2 class="popup__title title">Связаться с нами</h2>
+              <form action="post">
+                <div class="popup__inputs">
+                  <input
+                    type="text"
+                    name="userName"
+                    id="userName"
+                    placeholder="Имя"
+                  />
+                  <input
+                    type="tel"
+                    name="userPhone"
+                    id="userPhone"
+                    placeholder="Номер телефона"
+                  />
+                </div>
+                <button type="submit" class="popup__btn btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="major">
+        <div class="major__bg bg">
+          <img src="img/mrpl.jpg" alt="" />
+        </div>
+        <div class="major__bg--blackout"></div>
+        <div class="container">
+          <h2 class="major__title title">Агенство недвижимости дом маркет</h2>
+          <span class="major__dash dash"></span>
+          <div class="major__subtitle subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            molestias iusto praesentium enim, corporis eaque sapiente
+            consectetur.
+          </div>
+          <a href="#popup" class="major__btn popup-link btn">Связаться</a>
+          <div class="major__blocks">
+            <div class="major__block">
+              <div>
+                <img src="img/house.svg" alt="" />
+              </div>
+              <p>работаем со всеми банками</p>
+            </div>
+            <div class="major__block major__block--circle">
+              <p class="top">более</p>
+              <p class="medium">10</p>
+              <p class="bottom">лет опыта</p>
+            </div>
+            <div class="major__block major__block--circle">
+              <p class="top">более</p>
+              <p class="medium">2000</p>
+              <p class="bottom">клиентов</p>
+            </div>
+            <div class="major__block">
+              <div>
+                <img src="img/hand.svg" alt="" />
+              </div>
+              <p>возможность взять в ипотеку</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog-mini">
+        <div class="container">
+          <h2 class="catalog__title title">Каталог</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">Все</li>
+            <li class="catalog__item active">Аренда</li>
+            <li class="catalog__item">Продажа</li>
+            <li class="catalog__item">Для бизнеса</li>
+          </ul>
+          <div class="products">
+            <a href="product.html" class="catalog__product product">
+              <div class="product__img">
+                <span>Аренда</span>
+                <img src="img/product.jpg" alt="Продукт" />
+              </div>
+              <div class="product__title">Заголовок</div>
+              <div class="product__price">5000 $</div>
+            </a>
+            <a href="product.html" class="catalog__product product">
+              <div class="product__img">
+                <span>Аренда</span>
+                <img src="img/product.jpg" alt="Продукт" />
+              </div>
+              <div class="product__title">Заголовок</div>
+              <div class="product__price">5000 $</div>
+            </a>
+            <a href="product.html" class="catalog__product product">
+              <div class="product__img">
+                <span>Аренда</span>
+                <img src="img/product.jpg" alt="Продукт" />
+              </div>
+              <div class="product__title">Заголовок</div>
+              <div class="product__price">5000 $</div>
+            </a>
+            <a href="product.html" class="catalog__product product">
+              <div class="product__img">
+                <span>Аренда</span>
+                <img src="img/product.jpg" alt="Продукт" />
+              </div>
+              <div class="product__title">Заголовок</div>
+              <div class="product__price">5000 $</div>
+            </a>
+          </div>
+          <a href="catalog.html" target="_blank" class="catalog__btn btn"
+            >Смотреть еще</a
+          >
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__bg bg">
+          <img src="img/img1.jpg" alt="" />
+        </div>
+        <div class="container">
+          <h2 class="about__title title">О нас</h2>
+          <span class="about__dash dash"></span>
+          <div class="about__subtitle subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            optio nihil numquam officiis a consequuntur ab tenetur cum quae,
+            impedit ea doloribus! Similique assumenda ipsam pariatur unde
+            corrupti est deleniti eius eveniet voluptas ea iusto aliquid optio,
+            natus ex fugit, rem quos vitae minima repellat eligendi, earum
+            suscipit. Voluptatum ut fugit error. Fugit dolor quam repudiandae.
+            Dignissimos perspiciatis quidem rem accusamus vero. Inventore, sed
+            labore!
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h2 class="contacts__title title">Контакты</h2>
+          <div class="content">
+            <div class="contacts__form">
+              <div class="contacts__title--sub title">Связаться с нами</div>
+              <form action="post">
+                <div class="contacts__inputs">
+                  <input type="text" name="name" id="name" placeholder="Имя" />
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Номер телефона"
+                  />
+                </div>
+                <button type="submit" class="contacts__btn btn">
+                  Отправить
+                </button>
+              </form>
+            </div>
+            <div class="contacts__links">
+              <a href="tel:+38000000000" class="contacts__title--sub title"
+                >Номер телефона</a
+              >
+              <a href="tel:+38000000000" class="contatcs__link"
+                >+ 38 (000) 000 000</a
+              >
+              <a
+                href="mailto:dommarket@gmail.com"
+                class="contacts__title--sub title"
+                >Почта</a
+              >
+              <a href="mailto:dommarket@gmail.com" class="contatcs__link"
+                >dommarket@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="general">
+        <div class="container">
+          <ul class="footer__list">
+            <li class="item">
+              <a href="catalog.html">Аренда</a>
+            </li>
+            <li class="item">
+              <a href="catalog.html">Продажа</a>
+            </li>
+            <li class="item">
+              <a href="catalog.html">Для бизнеса</a>
+            </li>
+          </ul>
+          <a href="#" class="footer__logo">
+            <img src="img/logo.png" alt="Логотип" />
+          </a>
+          <div class="footer__right">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Пользовательское соглашение</a>
+            <div>© Дом Маркет 2021</div>
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <div class="container">
+          <a href="#" class="copyright__text copyright__text--left">
+            <span>design and</span>
+            <span>development</span>
+          </a>
+          <a href="#" class="copyright__logo">
+            <img src="img/logo.png" alt="">
+          </a>
+          <a href="#" class="copyright__text copyright__text--right">
+            <span class="top">Cactus</span>
+            <span class="bottom">web agency</span>
+          </a>
+        </div>
+      </section>
+    </footer>
+    <!-- Подключение библиотеки jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Подключение jQuery плагина Masked Input -->
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
