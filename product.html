@@ -14,6 +14,8 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/splide-core.min.css" />
   </head>
   <body class="body">
     <header class="header">
@@ -71,21 +73,26 @@
       </section>
       <section class="project">
         <div class="container">
+          <h2 class="project__title--main title">Название проекта</h2>
           <div class="project__content">
             <div class="project__imgs imgs">
-              <div class="img__upper img">
-                <img src="img/product.jpg" alt="" />
-              </div>
+              <a
+                href="img/img3.jpg"
+                data-lightbox="product"
+                class="img__upper img"
+              >
+                <img src="img/img3.jpg" alt="" />
+              </a>
               <div class="imgs__lower">
-                <div class="img">
-                  <img src="img/product.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="img/product.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="img/product.jpg" alt="" />
-                </div>
+                <a href="img/img1.jpg" data-lightbox="product" class="img">
+                  <img src="img/img1.jpg" alt="" />
+                </a>
+                <a href="img/img1.jpg" data-lightbox="product" class="img">
+                  <img src="img/img1.jpg" alt="" />
+                </a>
+                <a href="img/img3.jpg" data-lightbox="product" class="img">
+                  <img src="img/img3.jpg" alt="" />
+                </a>
               </div>
             </div>
             <div class="project__about">
@@ -122,7 +129,7 @@
             <a href="#" class="catalog__product product">
               <div class="product__img">
                 <span>Аренда</span>
-                <img src="img/product.jpg" alt="Продукт" />
+                <img src="img/img3.jpg" alt="Продукт" />
               </div>
               <div class="product__title">Заголовок</div>
               <div class="product__price">5000 $</div>
@@ -130,7 +137,7 @@
             <a href="#" class="catalog__product product">
               <div class="product__img">
                 <span>Аренда</span>
-                <img src="img/product.jpg" alt="Продукт" />
+                <img src="img/img4.jpg" alt="Продукт" />
               </div>
               <div class="product__title">Заголовок</div>
               <div class="product__price">5000 $</div>
@@ -138,7 +145,7 @@
             <a href="#" class="catalog__product product">
               <div class="product__img">
                 <span>Аренда</span>
-                <img src="img/product.jpg" alt="Продукт" />
+                <img src="img/img5.jpg" alt="Продукт" />
               </div>
               <div class="product__title">Заголовок</div>
               <div class="product__price">5000 $</div>
@@ -173,16 +180,8 @@
       </section>
       <section class="copyright">
         <div class="container">
-          <a href="#" class="copyright__text copyright__text--left">
-            <span>design and</span>
-            <span>development</span>
-          </a>
-          <a href="#" class="copyright__logo">
-            <img src="img/logo.png" alt="" />
-          </a>
-          <a href="#" class="copyright__text copyright__text--right">
-            <span class="top">Cactus</span>
-            <span class="bottom">web agency</span>
+          <a href="http://ccts.agency/" class="copyright__logo">
+            <img src="img/Frame.svg" alt="Логотип">
           </a>
         </div>
       </section>
@@ -191,6 +190,11 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <!-- Подключение jQuery плагина Masked Input -->
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/splide.min.js"></script>
+    <!-- <script>
+      new Splide(".splide").mount();
+    </script> -->
     <script src="js/script.js"></script>
   </body>
 </html>
