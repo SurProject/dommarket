@@ -22,7 +22,7 @@
   });
 
   setTimeout(function () {
-    popup.style.display = 'inline-block';
+    popup.style.display = "inline-block";
   }, timeout);
 
   popupLinks.forEach((element) => {
@@ -59,12 +59,6 @@
     lockPadding.forEach((element) => {
       element.style.paddingRight = lockPaddingValue + "px";
     });
-    // bg.forEach((element) => {
-    //   let marginRight = window.getComputedStyle(element, null).getPropertyValue("margin-right");
-    //   marginRight = marginRight.split('').slice(0, -2).join('');
-    //   element.style.marginRight = marginRight - lockPaddingValue + 'px';
-    //   console.log(marginRight - lockPaddingValue + 'px');
-    // });
     body.classList.add("lock");
   }
 
@@ -78,17 +72,20 @@
 
 // burger
 
-const burger = document.querySelector(".header__burger");
-const list = document.querySelector(".header__list");
+(() => {
+  const burger = document.querySelector(".header__burger");
+  const list = document.querySelector(".header__list");
 
-burger.addEventListener("click", function (e) {
-  burger.classList.toggle("active");
-  list.classList.toggle("active");
-  body.classList.toggle("lock");
-});
+  burger.addEventListener("click", function (e) {
+    burger.classList.toggle("active");
+    list.classList.toggle("active");
+    body.classList.toggle("lock");
+  });
+})();
 
 // Mask
-
-$(function () {
-  $("input[type = tel]").mask("+380 (99) 999 99 99");
-});
+(() => {
+  $(function () {
+    $("input[type = tel]").mask("+38 (999) 999 999");
+  });
+})();
