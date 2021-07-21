@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/lightbox.css" />
     <link rel="stylesheet" href="css/splide-core.min.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="body">
     <header class="header">
@@ -76,6 +80,98 @@
           <h2 class="project__title--main title">Название проекта</h2>
           <div class="project__content">
             <div class="project__imgs imgs">
+              <div class="splide splide-project">
+                <div class="splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="splide__arrow splide__arrow--next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="splide__track t-project">
+                  <div class="splide__list">
+                    <div class="splide__slide">
+                      <a
+                        href="img/img3.jpg"
+                        data-lightbox="product"
+                        class="img__upper img"
+                      >
+                        <img src="img/img3.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="splide__slide">
+                      <a
+                        href="img/img2.jpg"
+                        data-lightbox="product"
+                        class="img__upper img"
+                      >
+                        <img src="img/img2.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="splide__slide">
+                      <a
+                        href="img/img1.jpg"
+                        data-lightbox="product"
+                        class="img__upper img"
+                      >
+                        <img src="img/img1.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="splide__slide">
+                      <a
+                        href="img/img4.jpg"
+                        data-lightbox="product"
+                        class="img__upper img"
+                      >
+                        <img src="img/img4.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="splide__slide">
+                      <a
+                        href="img/img5.jpg"
+                        data-lightbox="product"
+                        class="img__upper img"
+                      >
+                        <img src="img/img5.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="secondary-slider" class="secondary-slider">
+                  <div class="splide__track">
+                    <div class="splide__list">
+                      <div class="splide__slide">
+                        <div class="img__upper img">
+                          <img src="img/img3.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="splide__slide">
+                        <div class="img__upper img">
+                          <img src="img/img2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="splide__slide">
+                        <div class="img__upper img">
+                          <img src="img/img1.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="splide__slide">
+                        <div class="img__upper img">
+                          <img src="img/img4.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="splide__slide">
+                        <div class="img__upper img">
+                          <img src="img/img5.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="project__imgs imgs">
               <a
                 href="img/img3.jpg"
                 data-lightbox="product"
@@ -84,17 +180,17 @@
                 <img src="img/img3.jpg" alt="" />
               </a>
               <div class="imgs__lower">
-                <a href="img/img1.jpg" data-lightbox="product" class="img">
+                <div class="img">
                   <img src="img/img1.jpg" alt="" />
-                </a>
-                <a href="img/img1.jpg" data-lightbox="product" class="img">
+                </div>
+                <div class="img">
                   <img src="img/img1.jpg" alt="" />
-                </a>
-                <a href="img/img3.jpg" data-lightbox="product" class="img">
+                </div>
+                <div class="img">
                   <img src="img/img3.jpg" alt="" />
-                </a>
+                </div>
               </div>
-            </div>
+            </div> -->
             <div class="project__about">
               <div class="project__title title">Название проекта</div>
               <div class="project__price">5000 $</div>
@@ -117,7 +213,61 @@
       <section class="similar">
         <div class="container">
           <div class="similar__title title">Подобные объекты</div>
-          <div class="products">
+          <div class="splide similar">
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="splide__arrow splide__arrow--next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide">
+                  <a href="#" class="product-slider">
+                    <div class="product-slider__img">
+                      <span>Аренда</span>
+                      <img src="img/product.jpg" alt="Продукт" />
+                    </div>
+                    <div class="product-slider__title">Заголовок</div>
+                    <div class="product-slider__price">5000 $</div>
+                  </a>
+                </div>
+                <div class="splide__slide">
+                  <a href="#" class="product-slider">
+                    <div class="product-slider__img">
+                      <span>Аренда</span>
+                      <img src="img/img3.jpg" alt="Продукт" />
+                    </div>
+                    <div class="product-slider__title">Заголовок</div>
+                    <div class="product-slider__price">5000 $</div>
+                  </a>
+                </div>
+                <div class="splide__slide">
+                  <a href="#" class="product-slider">
+                    <div class="product-slider__img">
+                      <span>Аренда</span>
+                      <img src="img/img4.jpg" alt="Продукт" />
+                    </div>
+                    <div class="product-slider__title">Заголовок</div>
+                    <div class="product-slider__price">5000 $</div>
+                  </a>
+                </div>
+                <div class="splide__slide">
+                  <a href="#" class="product-slider">
+                    <div class="product-slider__img">
+                      <span>Аренда</span>
+                      <img src="img/img5.jpg" alt="Продукт" />
+                    </div>
+                    <div class="product-slider__title">Заголовок</div>
+                    <div class="product-slider__price">5000 $</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="products">
             <a href="#" class="catalog__product product">
               <div class="product__img">
                 <span>Аренда</span>
@@ -150,7 +300,7 @@
               <div class="product__title">Заголовок</div>
               <div class="product__price">5000 $</div>
             </a>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
@@ -181,7 +331,7 @@
       <section class="copyright">
         <div class="container">
           <a href="http://ccts.agency/" class="copyright__logo">
-            <img src="img/Frame.svg" alt="Логотип">
+            <img src="img/Frame.svg" alt="Логотип" />
           </a>
         </div>
       </section>
@@ -192,9 +342,68 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/splide.min.js"></script>
-    <!-- <script>
-      new Splide(".splide").mount();
-    </script> -->
+    <script>
+      new Splide(".splide.similar", {
+        type: "loop",
+        perPage: 4,
+        perMove: 1,
+        gap: "1em",
+        pagination: false,
+        width: "90%",
+        breakpoints: {
+          767: {
+            width: "80%",
+            perPage: 3,
+          },
+        },
+      }).mount();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var primarySlider = new Splide(".splide-project", {
+          perPage: 1,
+          perMove: 1,
+          gap: "1em",
+          pagination: false,
+          width: "80%",
+          // breakpoints: {
+          //   767: {
+          //     width: "80%",
+          //     perPage: 3,
+          //   },
+          //   // 480: {
+          //   //   perPage: 3,
+          //   // },
+          // },
+        });
+        var secondarySlider = new Splide("#secondary-slider", {
+          pagination: false,
+          arrows: false,
+          perPage: 3,
+          // fixedWidth: 400,
+          height: 50,
+          gap: 10,
+          cover: true,
+          isNavigation: true,
+          focus: "center",
+          breakpoints: {
+            600: {
+              height: 40,
+            },
+          },
+          breakpoints: {
+            767: {
+              height: 100,
+            },
+            480: {
+              height: 55,
+            }
+          },
+        }).mount();
+        primarySlider.sync(secondarySlider).mount();
+      });
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

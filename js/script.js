@@ -3,15 +3,16 @@
   const popup = document.querySelector(".popup");
   const popupLinks = document.querySelectorAll(".popup-link");
   const popupCloseIcon = document.querySelectorAll(".close-popup");
-  // const bg = document.querySelectorAll(".bg");
 
   const timeout = 50;
 
   let lockPadding = [
     document.querySelector("header"),
-    document.querySelector("footer"),
-    // document.querySelector(".bg")
+    // document.querySelector("footer"),
   ];
+  document.querySelectorAll("footer > section").forEach((element) => {
+    lockPadding.push(element);
+  });
   document.querySelectorAll(".bg").forEach((element) => {
     lockPadding.push(element);
   });
@@ -42,6 +43,9 @@
     popup.addEventListener("click", function (e) {
       if (!e.target.closest(".popup__content")) {
         popupClose();
+        setTimeout(function () {
+          bodyUnlock();
+        }, timeout);
       }
     });
     bodyLock();
@@ -49,9 +53,6 @@
 
   function popupClose() {
     popup.classList.remove("open");
-    setTimeout(function () {
-      bodyUnlock();
-    }, timeout);
   }
 
   function bodyLock() {
@@ -68,6 +69,23 @@
     });
     body.classList.remove("lock");
   }
+
+  $(document).ready(function () {
+    $("form").submit(function (event) {
+      event.preventDefault();
+      popupClose();
+      Swal.fire({
+        icon: "success",
+        title: "Форма отправлена",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      setTimeout(function () {
+        bodyUnlock();
+      }, 1900);
+    });
+  });
+  
 })();
 
 // burger
@@ -89,3 +107,4 @@
     $("input[type = tel]").mask("+38 (999) 999 999");
   });
 })();
+
